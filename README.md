@@ -30,6 +30,20 @@ Example:
 PackageApplication /path/to/myapp.app -o myapp.ipa
 ```
 
+More options:
+```bash
+PackageApplication [-s signature] application [-o output_directory]
+    [-verbose] [-plugin plugin] || -man || -help
+
+    Options:
+        -s <signature>  certificate name to resign application before packaging
+        -o              specify output filename
+        -plugin         specify an optional plugin
+        -help           brief help message
+        -man            full documentation
+        -v[erbose]      provide details during operation
+```
+
 # How It Works #
 
 Apple recommend to use `xcodebuild -exportArchive` and remove it from xcode installation, but actually the command itself is very useful.
